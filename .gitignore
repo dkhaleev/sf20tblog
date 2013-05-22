@@ -1,0 +1,19 @@
+# Bootstrap
+app/bootstrap*
+
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/bundles/*
+web/uploads/*
+web/css/*
+web/js/*
+.project
+.buildpath
+.settings/
+
+# Configuration files
+app/config/parameters.ini
+app/config/aditional_parameters.ymlSymfony_Standard_2.0.23.tgz
+src/Acme!

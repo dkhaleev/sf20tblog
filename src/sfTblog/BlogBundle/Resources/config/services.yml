@@ -1,0 +1,7 @@
+parameters:
+#    sf_tblog_blog.example.class: sfTblog\BlogBundle\Example
+
+services:
+#    sf_tblog_blog.example:
+#        class: %sf_tblog_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

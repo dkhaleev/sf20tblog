@@ -1,0 +1,196 @@
+# START: Standart Symfony 2.0 bundles and components
+
+[symfony]
+    git=http://github.com/symfony/symfony.git
+    version=v2.0.23
+
+[twig]
+    git=http://github.com/fabpot/Twig.git
+    version=v1.6.2
+
+[monolog]
+    git=http://github.com/Seldaek/monolog.git
+    version=1.0.2
+
+[doctrine-common]
+    git=http://github.com/doctrine/common.git
+    version=2.2.2
+
+[doctrine-dbal]
+    git=http://github.com/doctrine/dbal.git
+    version=2.2.2
+
+[doctrine]
+    git=http://github.com/doctrine/doctrine2.git
+    version=2.2.3
+
+[swiftmailer]
+    git=http://github.com/swiftmailer/swiftmailer.git
+    version=v4.1.5
+
+[assetic]
+    git=http://github.com/kriswallsmith/assetic.git
+    version=v1.0.3
+
+[twig-extensions]
+    git=http://github.com/fabpot/Twig-extensions.git
+    version=v1.0.0-alpha
+
+[metadata]
+    git=http://github.com/schmittjoh/metadata.git
+    version=1.0.0
+
+[SensioFrameworkExtraBundle]
+    git=http://github.com/sensio/SensioFrameworkExtraBundle.git
+    target=/bundles/Sensio/Bundle/FrameworkExtraBundle
+    version=origin/2.0
+
+[JMSSecurityExtraBundle]
+    git=http://github.com/schmittjoh/JMSSecurityExtraBundle.git
+    target=/bundles/JMS/SecurityExtraBundle
+    version=origin/1.0.x
+
+[SensioDistributionBundle]
+    git=http://github.com/sensio/SensioDistributionBundle.git
+    target=/bundles/Sensio/Bundle/DistributionBundle
+    version=origin/2.0
+
+[SensioGeneratorBundle]
+    git=http://github.com/sensio/SensioGeneratorBundle.git
+    target=/bundles/Sensio/Bundle/GeneratorBundle
+    version=origin/2.0
+
+[AsseticBundle]
+    git=http://github.com/symfony/AsseticBundle.git
+    target=/bundles/Symfony/Bundle/AsseticBundle
+    version=v1.0.1
+
+# END: Standart Symfony 2.0 bundles and components
+
+
+# START: FOSUserBundle for authentification and authorization
+
+[FOSUserBundle]
+    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
+    target=bundles/FOS/UserBundle
+    version=1.2.0
+    
+# END: FOSUserBundle for authentification and authorization    
+
+
+# START: SonataAdminBundle and needed for it bundles
+    
+[SonataAdminBundle]
+    git=git://github.com/sonata-project/SonataAdminBundle.git
+    target=/bundles/Sonata/AdminBundle
+    version=origin/2.0
+    
+[SonataDoctrineORMAdminBundle]
+    git=http://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
+    target=/bundles/Sonata/DoctrineORMAdminBundle
+    version=origin/2.0    
+    
+[SonatajQueryBundle]
+    git=http://github.com/sonata-project/SonatajQueryBundle.git
+    target=/bundles/Sonata/jQueryBundle
+
+[SonataUserBundle]
+    git=http://github.com/sonata-project/SonataUserBundle.git
+    target=/bundles/Sonata/UserBundle
+    version=origin/2.0
+
+[KnpMenuBundle]
+    git=https://github.com/KnpLabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+    version=v1.1.0
+
+[KnpMenu]
+    git=https://github.com/KnpLabs/KnpMenu.git
+    target=/knp/menu
+    version=origin/1.1.x
+    
+[SonataBlockBundle]
+    git=http://github.com/sonata-project/SonataBlockBundle.git
+    target=/bundles/Sonata/BlockBundle
+    version=origin/2.0
+    
+[SonataCacheBundle]
+    git=http://github.com/sonata-project/SonataCacheBundle.git
+    target=/bundles/Sonata/CacheBundle
+    version=origin/2.0
+
+# END: SonataAdminBundle and needed for it bundles
+
+
+# START: GedmoBundle and needed for it bundles
+
+[gedmo-doctrine-extensions]
+    git=http://github.com/l3pp4rd/DoctrineExtensions.git
+    version=v2.3.5
+
+[DoctrineExtensionsBundle]
+    git=git://github.com/stof/StofDoctrineExtensionsBundle.git
+    target=/bundles/Stof/DoctrineExtensionsBundle
+#    version=origin/explicit_mapping
+    
+# END: GedmoBundle and needed for it bundles
+
+
+# START: AWS SDK for PHP 2
+
+[aws-sdk-for-php-2]
+    git=https://github.com/aws/aws-sdk-php
+    target=aws-sdk-for-php-2
+    version=2.0.1
+    
+[Guzzle]
+    git=https://github.com/guzzle/guzzle
+    target=guzzle
+    version=v3.0.5
+    
+# END: AWS SDK for PHP 2
+
+
+# START: Captcha Bundle
+
+[GregwarCaptchaBundle]
+    git=git://github.com/Gregwar/CaptchaBundle.git
+    target=/bundles/Gregwar/CaptchaBundle
+    version=origin/2.0
+        
+# END: Captcha Bundle
+
+
+# START: Doctrine fixtures
+
+[doctrine-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
+
+[DoctrineFixturesBundle]
+    git=http://github.com/doctrine/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+    version=origin/2.0
+    
+[KhepinYamlFixturesBundle]
+    git=http://github.com/khepin/KhepinYamlFixturesBundle.git
+    target=/bundles/Khepin/YamlFixturesBundle
+    version=origin/2.0
+
+# END: Doctrine fixtures
+
+
+# START: TinyMCE
+
+[TinymceBundle]
+    git=git://github.com/stfalcon/TinymceBundle.git
+    target=/bundles/Stfalcon/Bundle/TinymceBundle
+
+# END: TinyMCE
+
+# START: Sphinx
+#   
+#[Sphinx]
+#    git=https://github.com/quizlet/sphinxapi-php.git
+#    target=/sphinx-client
+#
+# END: Sphinx

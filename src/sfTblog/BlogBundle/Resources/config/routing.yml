@@ -1,0 +1,3 @@
+sfTblogBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: sfTblogBlogBundle:Default:index }
