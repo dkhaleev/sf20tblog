@@ -1,0 +1,9 @@
+{% if title is not defined %}
+	{% set title = 'titIT.com' %}
+{% endif %}
+
+{% include 'sfTblogBlogBundle:Layout:header.html.twig' with { 'title': title } %}
+
+{% block main_content %}{% endblock %}
+
+{% include 'sfTblogBlogBundle:Layout:footer.html.twig' %}
