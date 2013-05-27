@@ -1,3 +1,8 @@
 sfTblogBlogBundle_homepage:
     pattern:  /
     defaults: { _controller: sfTblogBlogBundle:Default:index }
+
+#this is a dummu-route
+ajax_check_email_uniqueness:
+    pattern:  /email/check
+    defaults: { _controller: sfTblogBlogBundle:Default:dummy }
