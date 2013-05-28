@@ -1,1 +1,86 @@
+
 @import "tblog/test.less";
+@import "tblog/colors.less";
+//sort code placed below
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    body {
+        height: 100%;
+        overflow: scroll;
+        position: relative;
+        #main_wrapper {
+            background: none repeat scroll 0 0 #FFFFFF;
+            min-height: 100%;
+            min-width: 1005px;
+            overflow: hidden;
+            position: relative;
+border: thin solid green;
+            .main-content {
+                margin: 0 auto;
+                position: relative;
+                width: 754pt;
+                z-index: 1;
+border: thin solid blue;
+                #container {
+                    margin: 0 auto;
+                    position: relative;
+                    width: 754pt;
+                    z-index: 1;
+                    float: left;
+border: thin solid red;
+                    ul{
+                        list-style: none outside none;
+border: thin solid cyan;
+                        li{
+border: thin solid magenta;                            
+                            float: left;
+                            //width: 100%;
+                        }
+                    }
+                    ul.icons_grid{
+                        margin: 0 10px;
+                        li.row_holder{
+                            padding-left: 15%;
+                            ul.row{
+                                margin: 5px 0;
+                                float:left;
+                                //width: 100%;
+                                padding-left: 5%;
+                                position: relative;
+                                li.icon{
+                                    width:200px;
+                                    height: 200px;
+                                    margin: 0 5px;
+                                    position: relative;
+                                    float:left;
+                                    margin: 10px;
+                                    
+                                }
+                            }
+                        }
+                    }
+                                        
+                }
+            }
+            footer{
+                float:left;
+                width: 100%;
+                border: thin solid black;
+                height: 150px;
+            }
+            header{
+                border: thin solid green;
+                float: left;
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+}
+
