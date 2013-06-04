@@ -1,0 +1,13 @@
+[parameters]
+    database_driver="pdo_mysql"
+    database_host="127.0.0.1"
+    database_port="db_port"
+    database_name="db_name"
+    database_user="db_user"
+    database_password="db_password"
+    mailer_transport="smtp"
+    mailer_host="localhost"
+    mailer_user=""
+    mailer_password=""
+    locale="en"
+    secret="64d723502192af1d0b58d9fa0f5707df0ff07df1"
