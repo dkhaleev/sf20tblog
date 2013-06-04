@@ -15,7 +15,8 @@ web/js/*
 
 # Configuration files
 app/config/parameters.ini
-app/config/aditional_parameters.ymlSymfony_Standard_2.0.23.tgz
+app/config/aditional_parameters.yml
+Symfony_Standard_2.0.23.tgz
 src/Acme!
 app/check.php
 Symfony_Standard_2.0.23.tgz
