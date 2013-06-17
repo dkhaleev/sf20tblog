@@ -46,7 +46,7 @@ border: thin solid magenta;
                     ul.icons_grid{
                         margin: 0 10px;
                         li.row_holder{
-                            padding-left: 15%;
+                            padding-left: 10%;
                             ul.row{
                                 margin: 5px 0;
                                 float:left;
@@ -58,8 +58,11 @@ border: thin solid magenta;
                                     height: 200px;
                                     margin: 0 5px;
                                     position: relative;
+                                    border-radius: 40px;
+                                    border: 10px solid @black;
                                     float:left;
                                     margin: 10px;
+                                    font-family: Bauhaus;
                                     
                                 }
                             }
@@ -83,4 +86,52 @@ border: thin solid magenta;
         }
     }
 }
+li.row_holder ul.row li.icon a{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url("../images/main_tiles.png");
+}
+li.row_holder ul.row li.icon a.context{
+    background-position: 0px 0px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.string{
+    background-position: -220px 0px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.audit{
+    background-position: -440px 0px;
+    text-decoration: none;
+}
 
+li.row_holder ul.row li.icon a.content{
+    background-position: -0px -220px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.act_promo{
+    background-position: -220px -220px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.vk_promo{
+    background-position: -440px -220px;
+    text-decoration: none;
+}
+
+li.row_holder ul.row li.icon a.reputation{
+    background-position: -0px -440px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.banners{
+    background-position: -22s0px -440px;
+    text-decoration: none;
+}
+li.row_holder ul.row li.icon a.consult{
+    background-position: -440px -440px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Bauhaus; /* Имя шрифта */
+    src: url("fonts/bauhaush.ttf"); /* Путь к файлу со шрифтом */
+   }
