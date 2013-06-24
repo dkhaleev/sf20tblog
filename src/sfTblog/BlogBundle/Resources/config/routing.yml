@@ -1,8 +1,50 @@
 sfTblogBlogBundle_homepage:
     pattern:  /
     defaults: { _controller: sfTblogBlogBundle:Default:index }
+    
+#----------------------------------------    
+# routes from homepage tiles-buttons
+#----------------------------------------
+serv_context:
+    pattern: /services/context-ads
+    defaults: { _controller: sfTblogBlogBundle:Homepage:context }
 
-#this is a dummu-route
+serv_line:
+    pattern: /services/line-ads
+    defaults: { _controller: sfTblogBlogBundle:Homepage:line }
+    
+serv_audit:
+    pattern: /services/audit
+    defaults: { _controller: sfTblogBlogBundle:Homepage:audit }
+    
+serv_content:
+    pattern: /services/content
+    defaults: { _controller: sfTblogBlogBundle:Homepage:content }
+    
+serv_act_promo:
+    pattern: /services/active-promo
+    defaults: { _controller: sfTblogBlogBundle:Homepage:actPromo }
+    
+serv_vk_promo:
+    pattern: /services/vkontakte-promo
+    defaults: { _controller: sfTblogBlogBundle:Homepage:vkPromo }
+    
+serv_reputation:
+    pattern: /services/reputation
+    defaults: { _controller: sfTblogBlogBundle:Homepage:reputation }
+    
+serv_banners:
+    pattern: /services/banners
+    defaults: { _controller: sfTblogBlogBundle:Homepage:banners }
+    
+serv_consult:
+    pattern: /services/consultation
+    defaults: { _controller: sfTblogBlogBundle:Homepage:consultation }
+
+#-----------------------------------------
+# end of homepage routes
+#-----------------------------------------
+#this is a dummy-route
 ajax_check_email_uniqueness:
     pattern:  /email/check
     defaults: { _controller: sfTblogBlogBundle:Default:dummy }

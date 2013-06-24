@@ -20,64 +20,91 @@ html {
             min-width: 1005px;
             overflow: hidden;
             position: relative;
-border: thin solid green;
+            border: thin solid green;
             .main-content {
                 margin: 0 auto;
                 position: relative;
                 width: 754pt;
                 z-index: 1;
-border: thin solid blue;
+                border: thin solid blue;
                 #container {
                     margin: 0 auto;
                     position: relative;
                     width: 754pt;
                     z-index: 1;
                     float: left;
-border: thin solid red;
-                    ul{
+                    border: thin solid red;
+                    ul {
                         list-style: none outside none;
-border: thin solid cyan;
-                        li{
-border: thin solid magenta;                            
+                        border: thin solid cyan;
+                        li {
+                            border: thin solid magenta;
                             float: left;
-                            //width: 100%;
                         }
                     }
-                    ul.icons_grid{
+
+                    ul.icons_grid {
                         margin: 0 10px;
-                        li.row_holder{
+                        li.row_holder {
                             padding-left: 10%;
-                            ul.row{
+                            ul.row {
                                 margin: 5px 0;
-                                float:left;
-                                //width: 100%;
+                                float: left;
                                 padding-left: 5%;
                                 position: relative;
-                                li.icon{
-                                    width:200px;
+                                li.icon {
+                                    width: 200px;
                                     height: 200px;
                                     margin: 0 5px;
                                     position: relative;
                                     border-radius: 40px;
                                     border: 10px solid @black;
-                                    float:left;
+                                    float: left;
                                     margin: 10px;
                                     font-family: Bauhaus;
-                                    
                                 }
                             }
                         }
                     }
-                                        
                 }
             }
-            footer{
-                float:left;
+
+            footer {
+                float: left;
                 width: 100%;
                 border: thin solid black;
-                height: 150px;
+                div.chain_holder {
+                    margin: 0 auto;
+                    width: 720px;
+                    height: 80px;
+                    ul.bottom_chain {
+                        list-sytle: none;
+                        li{
+                            width: 60px;
+                            height: 60px;
+                            display:inline;
+                            margin: 0 5px;
+                            position: relative;
+                            border-radius: 15px;
+                            border: 5px solid @black;
+                            float: left;
+                            margin: 5px;
+                            font-family: Bauhaus;
+                            a{
+                                float:left;
+                                background-image: url("../images/bottom_chain_unbordered.png");
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 10px;
+                            }
+                            
+                        }
+                        
+                    }
+                }
             }
-            header{
+
+            header {
                 border: thin solid green;
                 float: left;
                 width: 100%;
@@ -86,52 +113,116 @@ border: thin solid magenta;
         }
     }
 }
-li.row_holder ul.row li.icon a{
+
+//main tiles style
+
+li.row_holder ul.row li.icon a {
     width: 200px;
     height: 200px;
     float: left;
     background-image: url("../images/main_tiles.png");
 }
-li.row_holder ul.row li.icon a.context{
+
+li.row_holder ul.row li.icon a.context {
     background-position: 0px 0px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.string{
+
+li.row_holder ul.row li.icon a.string {
     background-position: -220px 0px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.audit{
+
+li.row_holder ul.row li.icon a.audit {
     background-position: -440px 0px;
     text-decoration: none;
 }
 
-li.row_holder ul.row li.icon a.content{
+li.row_holder ul.row li.icon a.content {
     background-position: -0px -220px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.act_promo{
+
+li.row_holder ul.row li.icon a.act_promo {
     background-position: -220px -220px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.vk_promo{
+
+li.row_holder ul.row li.icon a.vk_promo {
     background-position: -440px -220px;
     text-decoration: none;
 }
 
-li.row_holder ul.row li.icon a.reputation{
+li.row_holder ul.row li.icon a.reputation {
     background-position: -0px -440px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.banners{
-    background-position: -22s0px -440px;
+
+li.row_holder ul.row li.icon a.banners {
+    background-position: -220px -440px;
     text-decoration: none;
 }
-li.row_holder ul.row li.icon a.consult{
+
+li.row_holder ul.row li.icon a.consult {
     background-position: -440px -440px;
     text-decoration: none;
 }
 
+//bottom chain tiles style
+
+
+
+div.chain_holder ul.bottom_chain li a.context {
+    background-position: -8px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.string {
+    background-position: -87px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.audit {
+    background-position: -165px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.content {
+    background-position: -243px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.act_promo {
+    background-position: -322px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.vk_promo {
+    background-position: -399px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.reputation {
+    background-position: -478px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.banners {
+    background-position: -556px -1px;
+    text-decoration: none;
+}
+
+div.chain_holder ul.bottom_chain li a.consult {
+    background-position: -635px -1px;
+    text-decoration: none;
+}
+
 @font-face {
-    font-family: Bauhaus; /* Имя шрифта */
-    src: url("fonts/bauhaush.ttf"); /* Путь к файлу со шрифтом */
-   }
+    font-family: Bauhaus;
+    src: url("fonts/bauhaush.ttf");
+}
+
+p.copyright{
+    float:left;
+    width: 100%;
+}

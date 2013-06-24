@@ -1,5 +1,7 @@
 {% if title is not defined %}
 	{% set title = 'titIT.com' %}
+{% else %}
+    {% set title = 'titIT.com | '~title %}
 {% endif %}
 
 {% include 'sfTblogBlogBundle:Layout:header.html.twig' with { 'title': title } %}
