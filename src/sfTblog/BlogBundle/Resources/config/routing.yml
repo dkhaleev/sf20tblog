@@ -40,6 +40,10 @@ serv_banners:
 serv_consult:
     pattern: /services/consultation
     defaults: { _controller: sfTblogBlogBundle:Homepage:consultation }
+    
+serv_request:
+    pattern: /services/request
+    defaults: { _controller: sfTblogBlogBundle:Homepage:request }
 
 #-----------------------------------------
 # end of homepage routes

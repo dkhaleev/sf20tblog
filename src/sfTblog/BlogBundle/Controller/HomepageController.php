@@ -69,4 +69,11 @@ class HomepageController extends Controller
                 ->render('sfTblogBlogBundle:Homepage:context.html.twig',
                         array('title' => "услуги консультации"));
     }
+    
+    public function requestAction()
+    {
+        return $this
+        ->render('sfTblogBlogBundle:Homepage:context.html.twig',
+                array('title' => "подать заявку"));
+    }
 }

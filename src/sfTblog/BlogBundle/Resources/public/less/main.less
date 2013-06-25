@@ -1,6 +1,8 @@
 
 @import "tblog/test.less";
 @import "tblog/colors.less";
+@import "tblog/homepage.less";
+@import "tblog/footer.less";
 //sort code placed below
 * {
     margin: 0px;
@@ -14,31 +16,33 @@ html {
         height: 100%;
         overflow: scroll;
         position: relative;
+        div.spacer {
+            float: left;
+            position: absolute;
+            width: 1300px;
+        }
+
         #main_wrapper {
-            background: none repeat scroll 0 0 #FFFFFF;
+            background: none repeat scroll 0 0;
+            background-color: #4ca8d6;
             min-height: 100%;
             min-width: 1005px;
             overflow: hidden;
             position: relative;
-            border: thin solid green;
             .main-content {
                 margin: 0 auto;
                 position: relative;
                 width: 754pt;
                 z-index: 1;
-                border: thin solid blue;
                 #container {
                     margin: 0 auto;
                     position: relative;
                     width: 754pt;
                     z-index: 1;
                     float: left;
-                    border: thin solid red;
                     ul {
                         list-style: none outside none;
-                        border: thin solid cyan;
                         li {
-                            border: thin solid magenta;
                             float: left;
                         }
                     }
@@ -72,17 +76,17 @@ html {
             footer {
                 float: left;
                 width: 100%;
-                border: thin solid black;
+                margin: 30px 0 0 0;
                 div.chain_holder {
                     margin: 0 auto;
                     width: 720px;
                     height: 80px;
                     ul.bottom_chain {
                         list-sytle: none;
-                        li{
+                        li {
                             width: 60px;
                             height: 60px;
-                            display:inline;
+                            display: inline;
                             margin: 0 5px;
                             position: relative;
                             border-radius: 15px;
@@ -90,131 +94,88 @@ html {
                             float: left;
                             margin: 5px;
                             font-family: Bauhaus;
-                            a{
-                                float:left;
+                            a {
+                                float: left;
                                 background-image: url("../images/bottom_chain_unbordered.png");
                                 width: 60px;
                                 height: 60px;
                                 border-radius: 10px;
                             }
-                            
                         }
-                        
                     }
                 }
             }
 
             header {
-                border: thin solid green;
                 float: left;
                 width: 100%;
-                height: 150px;
+                margin: 0 0 30px 0;
+                ul.block_holder {
+                    list-style: none;
+                    margin: 0 5%;
+                    float: left;
+                    li.logo {
+                        background-image: url("../images/logo.png");
+                        background-repeat: no-repeat;
+                        float: left;
+                        height: 150px;
+                        margin: 0 0 -35px 75px;
+                        width: 128px;
+                    }
+
+                    li.brand {
+                        background-image: url("http://sf20tblog.dev/bundles/sftblogblog/less/../images/brand.png");
+                        background-repeat: no-repeat;
+                        float: left;
+                        height: 55px;
+                        margin-top: 115px;
+                        position: absolute;
+                        width: 150px;
+                    }
+
+                    li.slogan {
+                        float: left;
+                        font-family: times new roman, tahoma;
+                        font-size: 25px;
+                        height: 40px;
+                        margin: 100px 50px 0;
+                        position: relative;
+                    }
+
+                    li.request {
+                        border: 5px solid black;
+                        border-radius: 20px;
+                        float: right;
+                        height: 130px;
+                        margin: 15px;
+                        width: 130px;
+                        a {
+                            background-image: url('../images/request.png');
+                            background-repeat: no-repeat;
+                            width: 100px;
+                            height: 50px;
+                            float: left;
+                            margin: 35px 15px;
+                        }
+                    }
+                }
+
+                hr {
+                    float: left;
+                    margin: 10px 5%;
+                    position: static;
+                    width: 90%;
+                }
+
+                span.description {
+                    float: left;
+                    font-family: times new roman, tahoma;
+                    font-size: 20px;
+                    margin: 0 10%;
+                }
             }
         }
     }
-}
-
-//main tiles style
-
-li.row_holder ul.row li.icon a {
-    width: 200px;
-    height: 200px;
-    float: left;
-    background-image: url("../images/main_tiles.png");
-}
-
-li.row_holder ul.row li.icon a.context {
-    background-position: 0px 0px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.string {
-    background-position: -220px 0px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.audit {
-    background-position: -440px 0px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.content {
-    background-position: -0px -220px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.act_promo {
-    background-position: -220px -220px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.vk_promo {
-    background-position: -440px -220px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.reputation {
-    background-position: -0px -440px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.banners {
-    background-position: -220px -440px;
-    text-decoration: none;
-}
-
-li.row_holder ul.row li.icon a.consult {
-    background-position: -440px -440px;
-    text-decoration: none;
-}
-
-//bottom chain tiles style
-
-
-
-div.chain_holder ul.bottom_chain li a.context {
-    background-position: -8px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.string {
-    background-position: -87px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.audit {
-    background-position: -165px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.content {
-    background-position: -243px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.act_promo {
-    background-position: -322px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.vk_promo {
-    background-position: -399px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.reputation {
-    background-position: -478px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.banners {
-    background-position: -556px -1px;
-    text-decoration: none;
-}
-
-div.chain_holder ul.bottom_chain li a.consult {
-    background-position: -635px -1px;
-    text-decoration: none;
 }
 
 @font-face {
@@ -222,7 +183,3 @@ div.chain_holder ul.bottom_chain li a.consult {
     src: url("fonts/bauhaush.ttf");
 }
 
-p.copyright{
-    float:left;
-    width: 100%;
-}
