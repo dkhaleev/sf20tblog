@@ -1,4 +1,4 @@
-sfTblogBlogBundle_homepage:
+default:
     pattern:  /
     defaults: { _controller: sfTblogBlogBundle:Default:index }
     
