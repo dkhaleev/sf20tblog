@@ -1,8 +1,10 @@
 
 @import "tblog/test.less";
 @import "tblog/colors.less";
+@import "tblog/header.less";
 @import "tblog/homepage.less";
 @import "tblog/footer.less";
+@import "tblog/helpers.less";
 //sort code placed below
 * {
     margin: 0px;
@@ -10,7 +12,7 @@
 }
 
 html {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #1F1A17;
     height: 100%;
     body {
         height: 100%;
@@ -23,8 +25,8 @@ html {
         }
 
         #main_wrapper {
-            background: none repeat scroll 0 0;
-            background-color: #4ca8d6;
+            background: none repeat scroll 0 0 #1F1A17;
+            color: #969594;
             min-height: 100%;
             min-width: 1005px;
             overflow: hidden;
@@ -40,6 +42,9 @@ html {
                     width: 754pt;
                     z-index: 1;
                     float: left;
+                    p.text{
+                        float:left;
+                    }
                     ul {
                         list-style: none outside none;
                         li {
@@ -62,7 +67,7 @@ html {
                                     margin: 0 5px;
                                     position: relative;
                                     border-radius: 40px;
-                                    border: 10px solid @black;
+                                    border: 10px solid @gray;
                                     float: left;
                                     margin: 10px;
                                     font-family: Bauhaus;
@@ -90,7 +95,7 @@ html {
                             margin: 0 5px;
                             position: relative;
                             border-radius: 15px;
-                            border: 5px solid @black;
+                            border: 5px solid @gray;
                             float: left;
                             margin: 5px;
                             font-family: Bauhaus;

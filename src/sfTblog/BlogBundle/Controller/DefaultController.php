@@ -13,6 +13,11 @@ class DefaultController extends Controller
         return $this->render('sfTblogBlogBundle:Partials:index.html.twig', array('name' => $name));
     }
     
+    public function underConstructionAction()
+    {
+        return $this->render('sfTblogBlogBundle:Partials:under_construction.html.twig', array('title'=>'under construction'));
+    }
+    
     
     #dummy action. copied to prevent error
     public function checkEmailUniquenessAction()

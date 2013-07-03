@@ -48,6 +48,13 @@ serv_request:
 #-----------------------------------------
 # end of homepage routes
 #-----------------------------------------
+  
+#-----------------------------------------
+# under construction
+#-----------------------------------------
+under_construction:
+    pattern: /under_construction
+    defaults: { _controller: sfTblogBlogBundle:Default:underConstruction }
 #this is a dummy-route
 ajax_check_email_uniqueness:
     pattern:  /email/check
