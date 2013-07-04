@@ -9,6 +9,7 @@ class HomepageController extends Controller
     #static page-actions. Routes from homepage tiles
     public function contextAction()
     {
+        
         return $this
                 ->render('sfTblogBlogBundle:Homepage:context.html.twig',
                         array('title' => "контекстная реклама"));

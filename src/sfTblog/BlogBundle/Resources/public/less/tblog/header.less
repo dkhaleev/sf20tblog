@@ -1,8 +1,24 @@
+div#left_menu{
+    background-color: @gray;
+    cursor: pointer;
+    height: 166px;
+    left: 0;
+    position: fixed;
+    top: 67px;
+    visibility: visible;
+    width: 41px;
+    z-index: 9996;
+    span{
+        transform:rotate(90deg);
+        float:left;
+    }
+}
+
 div#main_wrapper {
-    div.top_menu_holder {
+    div.top_menu_holder,div.bot_menu_holder {
         float: left;
         width: 100%;
-        ul.menu_top {
+        ul.menu_top,ul.menu_bot {
             float: inherit;
             list-style: none outside none;
             margin: 10px 30%;
