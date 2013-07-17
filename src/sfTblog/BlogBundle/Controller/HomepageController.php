@@ -5,7 +5,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class HomepageController extends Controller
 {
-
     #static page-actions. Routes from homepage tiles
     public function contextAction()
     {

@@ -10,7 +10,7 @@ class DefaultController extends Controller
     
     public function indexAction($name=false)
     {
-        return $this->render('sfTblogBlogBundle:Partials:index.html.twig', array('name' => $name));
+          return $this->render('sfTblogBlogBundle:Partials:index.html.twig', array('name' => $name));
     }
     
     public function underConstructionAction()

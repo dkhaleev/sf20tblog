@@ -1,4 +1,7 @@
 parameters:
+    homepage_settings:
+        left_menu: %left_menu%
+        right_menu: %right_menu%
 #    sf_tblog_blog.example.class: sfTblog\BlogBundle\Example
 
 services:

@@ -1,5 +1,6 @@
 div#left_menu{
     background-color: @gray;
+    color: @coffee_black;
     cursor: pointer;
     height: 166px;
     left: 0;
@@ -15,6 +16,102 @@ div#left_menu{
 }
 
 div#main_wrapper {
+    
+                header {
+                float: left;
+                width: 100%;
+                margin: 0 0 30px 0;
+                ul.block_holder {
+                    list-style: none;
+                    margin: 0 5%;
+                    float: left;
+                    li.logo {
+                        background-image: url("../images/logo.png");
+                        background-repeat: no-repeat;
+                        float: left;
+                        height: 150px;
+                        margin: 0 0 -35px 75px;
+                        width: 128px;
+                        a {
+                            float: left;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    li.brand {
+                        background-image: url("http://sf20tblog.dev/bundles/sftblogblog/less/../images/brand.png");
+                        background-repeat: no-repeat;
+                        float: left;
+                        height: 55px;
+                        margin-top: 115px;
+                        position: absolute;
+                        width: 150px;
+                        a {
+                            float: left;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    li.middle_block {
+                        float: inherit;
+                        position: relative;
+                        ul {
+                            list-style: none outside none;
+                            li.slogan {
+                                font-family: times new roman, tahoma;
+                                font-size: 25px;
+                                height: 40px;
+                                margin: 50px 50px 0;
+                                position: relative;
+                            }
+
+                            li.contact {
+                                ul {
+                                    width: 150px;
+                                    float: right;
+                                    li {
+                                        float: inherit;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    li.request {
+                        border: 5px solid black;
+                        border-radius: 20px;
+                        float: right;
+                        height: 130px;
+                        margin: 15px;
+                        width: 130px;
+                        a {
+                            background-image: url('../images/request.png');
+                            background-repeat: no-repeat;
+                            width: 100px;
+                            height: 50px;
+                            float: left;
+                            margin: 35px 15px;
+                        }
+                    }
+                }
+
+                hr {
+                    float: left;
+                    margin: 10px 5%;
+                    position: static;
+                    width: 90%;
+                }
+
+                span.description {
+                    float: left;
+                    font-family: times new roman, tahoma;
+                    font-size: 20px;
+                    margin: 0 10%;
+                }
+            }
+    
     div.top_menu_holder,div.bot_menu_holder {
         float: left;
         width: 100%;
@@ -30,7 +127,7 @@ div#main_wrapper {
                 font-family: times new roman, tahoma;
                 a {
                     text-decoration: none;
-                    color:#969594;
+                    color:@gray;
                     
                 }
             }
