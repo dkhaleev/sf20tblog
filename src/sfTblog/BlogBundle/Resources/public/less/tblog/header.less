@@ -10,13 +10,36 @@ div#left_menu{
     visibility: visible;
     /*width: 41px;*/
     z-index: 9996;
-   /* These three lines are for transparency in all browsers. */
-   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-   filter: alpha(opacity=50);
-   opacity:.5;
     span{
         transform:rotate(90deg);
         float:left;
+    }
+}
+div#right_menu{
+    background-color: @gray;
+    color: @coffee_black;
+    cursor: pointer;
+    transparent: 0.5;
+    /*height: 166px;*/
+    right: 0;
+    position: fixed;
+    top: 67px;
+    visibility: visible;
+    /*width: 41px;*/
+    z-index: 9996;
+    span{
+        transform:rotate(90deg);
+        float:left;
+    }
+}
+.side_menu{
+    
+    a{
+        text-decoration:none;
+        color: @coffee_black;
+    }
+    a:visited{
+        color:@coffee_black
     }
 }
 
